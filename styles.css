@@ -39,3 +39,22 @@
 .whatsapp-icon{width:25px;height:25px;fill:currentColor;display:block}.whatsapp-float{border-radius:50%;}
 
 .add-image-panel{display:flex;align-items:center;gap:16px;justify-content:flex-end;margin:28px 0 10px}.add-image-panel p{margin:0;color:var(--muted);font-size:12px}.add-image-button{display:inline-flex;align-items:center;gap:7px;padding:10px 15px;border:1px solid var(--gold-dark);color:var(--gold-dark);cursor:pointer;text-transform:uppercase;letter-spacing:.09em;font-size:11px;transition:.25s}.add-image-button:hover{background:var(--gold-dark);color:#fff}.image-upload-input{display:none}@media(max-width:560px){.add-image-panel{align-items:flex-start;flex-direction:column}.add-image-panel p{font-size:11px}}
+
+/* Mobile hamburger navigation */
+.menu-toggle{display:none;border:0;background:transparent;padding:8px;cursor:pointer;width:42px;height:42px;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.menu-toggle span{display:block;width:23px;height:2px;background:var(--ink);transition:.25s ease}
+@media(max-width:900px){
+  .site-header{position:relative}
+  .menu-toggle{display:flex;justify-self:end;z-index:121}
+  .site-header .nav{display:flex;position:absolute;top:calc(100% + 10px);left:0;right:0;z-index:120;flex-direction:column;align-items:stretch;gap:0;padding:8px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 30px rgba(0,0,0,.08);opacity:0;visibility:hidden;transform:translateY(-8px);pointer-events:none;transition:.25s ease}
+  .site-header.nav-open .nav{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
+  .site-header .nav a{display:block;padding:14px 16px;border-bottom:1px solid var(--line)}
+  .site-header .nav a:last-child{border-bottom:0}
+  .site-header.nav-open .menu-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .site-header.nav-open .menu-toggle span:nth-child(2){opacity:0}
+  .site-header.nav-open .menu-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+@media(max-width:560px){
+  .site-header{grid-template-columns:auto auto}
+  .site-header .header-cta{display:none}
+}
