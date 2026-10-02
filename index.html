@@ -10,8 +10,8 @@
 <div class="page-shell">
 <header class="site-header">
 <a class="brand" href="#home"><img src="assets/logo.png" alt="Kathir Arts logo"></a>
-<nav class="nav"><a href="#about">About</a><a href="#works">Artworks</a><a href="#sculpture">Sculptures</a><a href="#contact">Contact</a></nav>
-<a class="header-cta" href="#enquiry">Enquire</a>
+<nav class="nav"><a href="about.html">About</a><a href="artworks.html">Artworks</a><a href="sculptures.html">Sculptures</a><a href="contact.html">Contact</a></nav>
+<a class="header-cta" href="contact.html#enquiry">Enquire</a>
 </header>
 <main>
 <section class="hero" id="home">
@@ -19,7 +19,7 @@
 <p class="eyebrow">KATHIR ARTS · PAINTING · SCULPTURE · MURAL</p>
 <h1>Where <span>art</span> becomes an experience.</h1>
 <p class="hero-text">Original paintings, portraits, sculptures, mural work and handcrafted art created with detail, character and a strong visual identity.</p>
-<div class="hero-actions"><a class="button button-dark" href="#works">Explore artworks</a><a class="button button-outline" href="#contact">Start an enquiry</a></div>
+<div class="hero-actions"><a class="button button-dark" href="artworks.html">Explore artworks</a><a class="button button-outline" href="contact.html#enquiry">Start an enquiry</a></div>
 <div class="hero-meta"><span>01 · Paintings</span><span>02 · Portraits</span><span>03 · Sculptures</span></div>
 </div>
 <div class="hero-art"><div class="hero-frame"><img src="assets/portrait-painting.png" alt="Kathir Arts portrait painting"></div><div class="hero-badge">ART<br><strong>BY KATHIR</strong></div></div>
@@ -89,9 +89,14 @@
 </div>
 </div>
 </section>
-</main>
+<section class="home-gallery section"><div class="section-heading"><div><div class="section-label">Featured gallery</div><h2>A glimpse into Kathir's work.</h2></div><p>Click any artwork to view the original image full screen.</p></div><div class="mini-gallery">
+<button class="mini-card image-button lightbox-trigger" data-full="assets/portrait-painting.png"><img src="assets/portrait-painting.png" alt="Portrait painting"></button>
+<button class="mini-card image-button lightbox-trigger" data-full="assets/animal-sculptures.png"><img src="assets/animal-sculptures.png" alt="Animal sculptures"></button>
+<button class="mini-card image-button lightbox-trigger" data-full="assets/buddha-sculpture.png"><img src="assets/buddha-sculpture.png" alt="Buddha sculpture"></button>
+<button class="mini-card image-button lightbox-trigger" data-full="assets/dog-sculpture.png"><img src="assets/dog-sculpture.png" alt="Dog sculpture"></button>
+<button class="mini-card image-button lightbox-trigger" data-full="assets/artist-gallery.png"><img src="assets/artist-gallery.png" alt="Artist gallery work"></button></div></section>
+<section class="enquiry section"><div class="enquiry-panel"><div><div class="section-label light">Custom work</div><h2>Have an idea for an artwork?</h2><p>Tell Kathir what you have in mind.</p></div><a class="button button-light" href="contact.html#enquiry">Make an enquiry ↗</a></div></section></main>
 <footer class="site-footer"><img src="assets/logo.png" alt="Kathir Arts"><p>© <span id="year"></span> Kathir Arts. All rights reserved.</p><a href="#home">Back to top ↑</a></footer>
-</div>
-<script src="script.js"></script>
+</div><div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close image">×</button><img id="lightbox-image" src="" alt=""><p id="lightbox-caption"></p></div><script src="script.js"></script>
 </body>
 </html>
