@@ -32,6 +32,8 @@
 .gallery-card { position:relative; }
 .card-enquire { display:inline-flex; align-items:center; justify-content:center; margin-top:12px; padding:9px 16px; border:1px solid var(--gold-dark); color:var(--gold-dark); text-decoration:none; text-transform:uppercase; letter-spacing:.1em; font-size:11px; transition:.25s ease; }
 .card-enquire:hover { background:var(--gold-dark); color:#fff; }
-.whatsapp-float { position:fixed; right:18px; bottom:20px; z-index:90; display:inline-flex; align-items:center; gap:6px; padding:9px 13px; background:#1f8f55; color:#fff; border-radius:999px; text-decoration:none; font-size:11px; font-weight:600; letter-spacing:.04em; box-shadow:0 6px 20px rgba(0,0,0,.16); transition:.25s ease; }
+.whatsapp-float { position:fixed; right:18px; bottom:20px; z-index:90; display:flex; align-items:center; justify-content:center; width:46px; height:46px; padding:0; background:#1f8f55; color:#fff; border-radius:999px; text-decoration:none; font-size:11px; font-weight:600; letter-spacing:.04em; box-shadow:0 6px 20px rgba(0,0,0,.16); transition:.25s ease; }
 .whatsapp-float:hover { transform:translateY(-2px); }
 @media(max-width:560px){ .whatsapp-float{right:12px;bottom:14px;padding:8px 11px;font-size:10px;} }
+
+.whatsapp-icon{width:25px;height:25px;fill:currentColor;display:block}.whatsapp-float{border-radius:50%;}
